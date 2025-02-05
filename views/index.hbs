@@ -1,0 +1,24 @@
+<div class="container bg-light w-80 mt-5">
+    <h1 class="display-4 text-center">Welcome to Video Transform Home</h1>
+
+    <div class="row row-cols-3 row-cols-md-3 mt-0 g-4">
+        <div class="col"></div>
+        <div class="col">
+
+            <div class="mb-3">
+                <form method="POST" action="/video_encode" role="form" enctype="multipart/form-data">
+                    <p class="text-danger">{{alert}}</p>
+                    <input type="file" class="form-control" id="imageField" name="image">
+                    <div class="text-center p-4">
+                        <button type="submit" name="submit_param" value="submit_value" class="btn btn-outline-dark">Encode MP4 to MOV</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+        <div class="col"></div>
+    </div>
+</div>
+
+
+
